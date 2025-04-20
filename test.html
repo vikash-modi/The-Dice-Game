@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+        }
+        .name{
+            height:50px;
+            width:100px;
+            background-color:aliceblue;
+            display: flex;
+            justify-content: center;
+            position:relative;
+            top:50px;
+            left:20px;
+        }
+        .dropdown{
+            display:none;
+        }
+        .dropdown li{
+            display: block;
+        }
+        .name:hover .dropdown{
+            position:absolute;
+            top:1.5rem;
+            left:0.1rem;
+            display:block;
+            height:100px;
+            width:60px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="name">
+        <p>Search
+        <ul class="dropdown">
+            <li>hiii</li>
+            <li>bye</li>
+            <li>good</li>
+        </ul>
+    </p>
+    </div>
+</body>
+</html>
